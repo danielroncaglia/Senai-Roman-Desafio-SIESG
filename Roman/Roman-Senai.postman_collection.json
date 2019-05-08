@@ -1,0 +1,195 @@
+{
+	"id": "4999df70-732a-bab5-3e5d-7ab4f5a5dc0a",
+	"name": "Roman-Senai",
+	"description": "",
+	"order": [
+		"6d88b28e-1c10-9bdc-9a96-334d99e4bd0e",
+		"10b07399-1f3e-8771-d1b6-6c3b1d0836ac",
+		"1b05a517-629c-4e81-281e-79fcaaad0c0e",
+		"06fdbbe9-c509-4963-1534-bba8d2f0c016",
+		"a9db8dbb-869b-d621-1586-4f9c8a993c8c",
+		"e2db5e28-f49e-7ffe-f4e4-2c0c64409e7f"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1557335516993,
+	"owner": "4679175",
+	"public": false,
+	"requests": [
+		{
+			"id": "06fdbbe9-c509-4963-1534-bba8d2f0c016",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/professores",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557338763846,
+			"name": "Cadastrar professores",
+			"description": "",
+			"collectionId": "4999df70-732a-bab5-3e5d-7ab4f5a5dc0a",
+			"responses": [],
+			"rawModeData": "    {\n        \"NomeProfessor\": \"Daniel\",\n        \"IdUsuario\": 2,\n        \"IdGrupo\": 1\n    }"
+		},
+		{
+			"id": "10b07399-1f3e-8771-d1b6-6c3b1d0836ac",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/projetos",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557336603961,
+			"name": "Listar projetos",
+			"description": "",
+			"collectionId": "4999df70-732a-bab5-3e5d-7ab4f5a5dc0a",
+			"responses": [],
+			"rawModeData": "    {\n        \"nomeProjeto\": \"Carfel\",\n        \"descricao\": \"gerenciamento de horários\",\n        \"tema\": \"Projetos\",\n        \"idProfessor\": 2,\n        \"situacao\": 1\n    }"
+		},
+		{
+			"id": "1b05a517-629c-4e81-281e-79fcaaad0c0e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/projetos",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557336716992,
+			"name": "Cadastrar projetos",
+			"description": "",
+			"collectionId": "4999df70-732a-bab5-3e5d-7ab4f5a5dc0a",
+			"responses": [],
+			"rawModeData": "    {\n        \"nomeProjeto\": \"Medical Group\",\n        \"descricao\": \"Marcação de consulta\",\n        \"tema\": \"Projetos\",\n        \"idProfessor\": 2,\n        \"situacao\": 1\n    }"
+		},
+		{
+			"id": "6d88b28e-1c10-9bdc-9a96-334d99e4bd0e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/login",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557336244117,
+			"name": "LoginRoman",
+			"description": "",
+			"collectionId": "4999df70-732a-bab5-3e5d-7ab4f5a5dc0a",
+			"responses": [],
+			"rawModeData": "{\"email\": \"adim@adim.com\", \"senha\": \"123\"}"
+		},
+		{
+			"id": "a9db8dbb-869b-d621-1586-4f9c8a993c8c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/usuario",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557338985411,
+			"name": "Cadastrar usuários",
+			"description": "",
+			"collectionId": "4999df70-732a-bab5-3e5d-7ab4f5a5dc0a",
+			"responses": [],
+			"rawModeData": "    {\n        \"Email\": \"daniel@daniel.com.br\",\n        \"Senha\": 12345,\n        \"TipoUsuario\": \"Professor\"\n    }"
+		},
+		{
+			"id": "e2db5e28-f49e-7ffe-f4e4-2c0c64409e7f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/usuario",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557338985411,
+			"name": "Cadastrar grupos",
+			"description": "",
+			"collectionId": "4999df70-732a-bab5-3e5d-7ab4f5a5dc0a",
+			"responses": [],
+			"rawModeData": "    {\n        \"Email\": \"daniel@daniel.com.br\",\n        \"Senha\": 12345,\n        \"TipoUsuario\": \"Professor\"\n    }"
+		}
+	]
+}
