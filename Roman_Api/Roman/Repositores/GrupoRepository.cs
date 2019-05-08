@@ -17,5 +17,16 @@ namespace Roman.Repositores
                 ctx.SaveChanges();
             }
         }
+
+        public IEnumerable<Grupo> ListaGrupo()
+        {
+            using (RomanContext ctx = new RomanContext())
+            {
+                List<Grupo> grupos = ctx.Grupo.ToList();
+
+                return grupos;
+            }
+
+        }
     }
 }

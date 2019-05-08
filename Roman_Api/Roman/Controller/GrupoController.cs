@@ -35,5 +35,18 @@ namespace Roman.Controller
                 return BadRequest(ex);
             }
         }
+
+        [HttpGet]
+        public IActionResult Listagem()
+        {
+            try
+            {
+                return Ok(GrupoRepository.ListaGrupo());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+        }
     }
 }

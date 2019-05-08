@@ -30,7 +30,7 @@ namespace Roman.Controller
                 ProjetosRepository.Cadastrar(projetos);
                 return Ok();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex);
             }
@@ -43,10 +43,11 @@ namespace Roman.Controller
             {
                 return Ok(ProjetosRepository.ListaProjetos());
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex);
             }
         }
+
     }
 }

@@ -12571,11 +12571,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\28725446827\\Desktop\\Daniel\\Sprint 5\\Senai-Roman-Desafio-SIESG\\Roman\\Roman\\Roman.csproj",
+      "projectUniqueName": "C:\\Users\\28725446827\\Desktop\\Daniel\\Sprint 5\\Senai-Roman-Desafio-SIESG\\Roman_Api\\Roman\\Roman.csproj",
       "projectName": "Roman",
-      "projectPath": "C:\\Users\\28725446827\\Desktop\\Daniel\\Sprint 5\\Senai-Roman-Desafio-SIESG\\Roman\\Roman\\Roman.csproj",
+      "projectPath": "C:\\Users\\28725446827\\Desktop\\Daniel\\Sprint 5\\Senai-Roman-Desafio-SIESG\\Roman_Api\\Roman\\Roman.csproj",
       "packagesPath": "C:\\Users\\28725446827\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\28725446827\\Desktop\\Daniel\\Sprint 5\\Senai-Roman-Desafio-SIESG\\Roman\\Roman\\obj\\",
+      "outputPath": "C:\\Users\\28725446827\\Desktop\\Daniel\\Sprint 5\\Senai-Roman-Desafio-SIESG\\Roman_Api\\Roman\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

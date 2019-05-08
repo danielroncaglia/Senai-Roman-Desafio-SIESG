@@ -9,5 +9,7 @@ namespace Roman.Interfaces
     interface IProfessorRepository
     {
         void Cadastrar(Professor professor);
+
+        IEnumerable<Professor> ListaProfessor();
     }
 }

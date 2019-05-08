@@ -9,5 +9,7 @@ namespace Roman.Interfaces
     interface IGrupoRepository
     {
         void Cadastrar(Grupo grupo);
+
+        IEnumerable<Grupo> ListaGrupo();
     }
 }

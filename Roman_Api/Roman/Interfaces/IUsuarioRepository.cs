@@ -11,5 +11,7 @@ namespace Roman.Interfaces
         void Cadastrar(Usuario usuario);
 
         Usuario BuscarPorEmailSenha(string email, string senha);
+
+        IEnumerable<Usuario> ListaUsuario();
     }
 }

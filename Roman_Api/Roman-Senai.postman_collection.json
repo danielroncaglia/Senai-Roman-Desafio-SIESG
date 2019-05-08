@@ -7,8 +7,11 @@
 		"10b07399-1f3e-8771-d1b6-6c3b1d0836ac",
 		"1b05a517-629c-4e81-281e-79fcaaad0c0e",
 		"06fdbbe9-c509-4963-1534-bba8d2f0c016",
+		"f2a6e16a-02d6-c071-b956-7a1bc1d5db9f",
 		"a9db8dbb-869b-d621-1586-4f9c8a993c8c",
-		"e2db5e28-f49e-7ffe-f4e4-2c0c64409e7f"
+		"8a0aaf4b-2b86-e4dc-5fc5-7e9ba718b0cf",
+		"e2db5e28-f49e-7ffe-f4e4-2c0c64409e7f",
+		"227fb8dd-c065-40cc-83fc-f1b1ca76171e"
 	],
 	"folders": [],
 	"folders_order": [],
@@ -104,6 +107,35 @@
 			"rawModeData": "    {\n        \"nomeProjeto\": \"Medical Group\",\n        \"descricao\": \"Marcação de consulta\",\n        \"tema\": \"Projetos\",\n        \"idProfessor\": 2,\n        \"situacao\": 1\n    }"
 		},
 		{
+			"id": "227fb8dd-c065-40cc-83fc-f1b1ca76171e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/grupo",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557344653643,
+			"name": "Listar grupos",
+			"description": "",
+			"collectionId": "4999df70-732a-bab5-3e5d-7ab4f5a5dc0a",
+			"responses": [],
+			"rawModeData": "    {\n        \"NomeGrupo\": \"Informáticar\",\n    }"
+		},
+		{
 			"id": "6d88b28e-1c10-9bdc-9a96-334d99e4bd0e",
 			"headers": "Content-Type: application/json\n",
 			"headerData": [
@@ -132,6 +164,35 @@
 			"collectionId": "4999df70-732a-bab5-3e5d-7ab4f5a5dc0a",
 			"responses": [],
 			"rawModeData": "{\"email\": \"adim@adim.com\", \"senha\": \"123\"}"
+		},
+		{
+			"id": "8a0aaf4b-2b86-e4dc-5fc5-7e9ba718b0cf",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/usuario",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557343661248,
+			"name": "Lisitar usuários",
+			"description": "",
+			"collectionId": "4999df70-732a-bab5-3e5d-7ab4f5a5dc0a",
+			"responses": [],
+			"rawModeData": "    {\n        \"Email\": \"daniel@daniel.com.br\",\n        \"Senha\": 12345,\n        \"TipoUsuario\": \"Professor\"\n    }"
 		},
 		{
 			"id": "a9db8dbb-869b-d621-1586-4f9c8a993c8c",
@@ -173,7 +234,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:5000/api/usuario",
+			"url": "http://localhost:5000/api/grupo",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -184,12 +245,41 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1557338985411,
+			"time": 1557343672741,
 			"name": "Cadastrar grupos",
 			"description": "",
 			"collectionId": "4999df70-732a-bab5-3e5d-7ab4f5a5dc0a",
 			"responses": [],
-			"rawModeData": "    {\n        \"Email\": \"daniel@daniel.com.br\",\n        \"Senha\": 12345,\n        \"TipoUsuario\": \"Professor\"\n    }"
+			"rawModeData": "    {\n        \"NomeGrupo\": \"Informáticar\",\n    }"
+		},
+		{
+			"id": "f2a6e16a-02d6-c071-b956-7a1bc1d5db9f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:5000/api/professores",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1557343322119,
+			"name": "Listar professores",
+			"description": "",
+			"collectionId": "4999df70-732a-bab5-3e5d-7ab4f5a5dc0a",
+			"responses": [],
+			"rawModeData": "    {\n        \"NomeProfessor\": \"Daniel\",\n        \"IdUsuario\": 2,\n        \"IdGrupo\": 1\n    }"
 		}
 	]
 }

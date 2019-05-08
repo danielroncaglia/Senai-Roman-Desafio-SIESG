@@ -17,5 +17,16 @@ namespace Roman.Repositores
                 ctx.SaveChanges();
             }
         }
+
+        public IEnumerable<Professor> ListaProfessor()
+        {
+            using (RomanContext ctx = new RomanContext())
+            {
+                List<Professor> professor = ctx.Professor.ToList();
+
+                return professor;
+            }
+
+        }
     }
 }

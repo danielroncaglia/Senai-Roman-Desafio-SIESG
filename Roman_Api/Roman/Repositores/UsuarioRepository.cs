@@ -25,5 +25,16 @@ namespace Roman.Repositores
                 ctx.SaveChanges();
             }
         }
+
+        public IEnumerable<Usuario> ListaUsuario()
+        {
+            using (RomanContext ctx = new RomanContext())
+            {
+                List<Usuario> usuario = ctx.Usuario.ToList();
+
+                return usuario;
+            }
+
+        }
     }
 }
