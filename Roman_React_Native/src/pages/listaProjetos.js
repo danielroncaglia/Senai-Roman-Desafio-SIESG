@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import {
     Text,
     View,
-    FletList,
+    FlatList,
     StyleSheet,
     Image,
     ImageBackground,
@@ -17,7 +17,7 @@ import Cabecalho from "../assets/components/cabecalho/HeadListaProjeto";
 
 export default class ListaProjetos extends Component{
     constructor(props){
-        super(prosp);
+        super(props);
 
         this.state = {
             lista: []
@@ -38,16 +38,16 @@ export default class ListaProjetos extends Component{
         return(
             <View>
                 <Text>Pagina de Lista de projetos</Text>
-                <FletList
+                <FlatList
                     data={this.state.lista}
                     keyExtractor={item => item.id}
-                    renderItem={this.renderizaItem}            
+                    renderItem={this.renderizaItem}
                 />
             </View>
         )
     }
 
-    renderizaItem = ({item}) => {
+    renderizaItem = ({item}) => (
         <View>
             <Text>{item.nomeProjeto}</Text>
             <Text>{item.tema}</Text>
@@ -63,6 +63,6 @@ export default class ListaProjetos extends Component{
 //     "idProfessor": 2,
 //     "situacao": 1
 // },
-    }
+    )
 
 }

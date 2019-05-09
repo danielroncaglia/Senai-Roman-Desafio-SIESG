@@ -23,11 +23,7 @@ class Login extends Component {
         }   
     }
 
-    redirectCadastro(){
-
-    }
-
-    _realizarLogin = async () => {
+    realizarLogin = async () => {
         
         const resposta = await api.post("/login", {
             email: this.state.email,
@@ -36,14 +32,14 @@ class Login extends Component {
 
         const token = resposta.data.token;
         await AsyncStorage.setItem("userToken", token);
-        this.props.navigation.navigation("ListaProjeto")
+        this.props.navigation.navigation("listaProjeto")
     }
 
     render() {
         return(
             // <View>
             //     <Cabecalho/>
-            //     <Text>Pagina de Projetos lista</Text>
+            //     <Text>Pagina login</Text>
             //     <Text></Text>
             // </View>
 
@@ -70,9 +66,12 @@ class Login extends Component {
               />
               <TouchableOpacity
                 style={styles.btnLogin}
-                onPress={this._realizarLogin}
+                onPress={this.realizarLogin}
               >
-                <Text style={styles.btnLoginText}>LOGIN</Text>
+                <Text
+                onClick={this._realizarLogin}
+                style={styles.btnLoginText}
+                >LOGIN</Text>
               </TouchableOpacity>
               
             </View>
