@@ -12565,23 +12565,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\28725446827\\.nuget\\packages\\": {},
+    "C:\\Users\\40270522859\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\28725446827\\Desktop\\Daniel\\Sprint 5\\Senai-Roman-Desafio-SIESG\\Roman_Api\\Roman\\Roman.csproj",
+      "projectUniqueName": "C:\\Users\\40270522859\\Desktop\\Senai-Roman-Desafio-SIESG\\Roman_Api\\Roman\\Roman.csproj",
       "projectName": "Roman",
-      "projectPath": "C:\\Users\\28725446827\\Desktop\\Daniel\\Sprint 5\\Senai-Roman-Desafio-SIESG\\Roman_Api\\Roman\\Roman.csproj",
-      "packagesPath": "C:\\Users\\28725446827\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\28725446827\\Desktop\\Daniel\\Sprint 5\\Senai-Roman-Desafio-SIESG\\Roman_Api\\Roman\\obj\\",
+      "projectPath": "C:\\Users\\40270522859\\Desktop\\Senai-Roman-Desafio-SIESG\\Roman_Api\\Roman\\Roman.csproj",
+      "packagesPath": "C:\\Users\\40270522859\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\40270522859\\Desktop\\Senai-Roman-Desafio-SIESG\\Roman_Api\\Roman\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\28725446827\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\40270522859\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

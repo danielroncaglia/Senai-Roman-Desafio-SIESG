@@ -1,15 +1,21 @@
 ﻿using Roman.Domains;
 using Roman.Interfaces;
-using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Roman.Repositores
 {
     public class ProjetosRepository : IProjetosRepository
     {
+
+        public Projetos BuscarPorId(int id)
+        {
+            using (RomanContext buscar = new RomanContext())
+            {
+                return buscar.Projetos.Find(id);
+            }
+        }
+
         public void Cadastrar(Projetos projetos)
         {
             using(RomanContext ctx = new RomanContext())
@@ -28,6 +34,15 @@ namespace Roman.Repositores
                 return projetos;
             }
 
+        }
+
+        public void Situacao(Projetos projetos, int id)
+        {
+            using (RomanContext situacao = new RomanContext())
+            {
+                situacao.Projetos.Update(projetos);
+                situacao.SaveChanges();
+            }
         }
     }
 }

@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Roman.Domains;
 using Roman.Interfaces;
@@ -23,6 +20,7 @@ namespace Roman.Controller
         }
 
         [HttpPost]
+        //[Authorize]
         public IActionResult Cadastro(Projetos projetos)
         {
             try
@@ -37,6 +35,7 @@ namespace Roman.Controller
         }
 
         [HttpGet]
+        //[Authorize]
         public IActionResult Listagem()
         {
             try
@@ -46,6 +45,27 @@ namespace Roman.Controller
             catch (Exception ex)
             {
                 return BadRequest(ex);
+            }
+        }
+
+        [HttpPut("{id}")]
+        //[Authorize (Roles = "Administrador")]
+        public IActionResult situacao(Projetos projetos, int id)
+        {
+            try
+            {
+                Projetos pesquisa = ProjetosRepository.BuscarPorId(id);
+
+                if (pesquisa == null)
+                {
+                    return BadRequest(new { mensagem = "projeto não encontrado" });
+                }
+                ProjetosRepository.Situacao(projetos, id);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { mensagem = "Erro" });
             }
         }
 
