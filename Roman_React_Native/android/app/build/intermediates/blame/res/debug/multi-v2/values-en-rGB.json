@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\51755101856\\Desktop\\Roman\\Senai-Roman-Desafio-SIESG\\Roman_React_Native\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rGB\\values-en-rGB.xml",
+            "outputFile": "C:\\Users\\51755101856\\Desktop\\Senai-Roman-Desafio-SIESG\\Roman_React_Native\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rGB\\values-en-rGB.xml",
             "map": [
                 {
                     "source": "C:\\Users\\51755101856\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\cb2bd4f6d955ca6154262840e519fce5\\res\\values-en-rGB\\values-en-rGB.xml",

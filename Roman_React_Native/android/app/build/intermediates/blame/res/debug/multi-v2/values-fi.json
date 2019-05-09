@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\51755101856\\Desktop\\Roman\\Senai-Roman-Desafio-SIESG\\Roman_React_Native\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fi\\values-fi.xml",
+            "outputFile": "C:\\Users\\51755101856\\Desktop\\Senai-Roman-Desafio-SIESG\\Roman_React_Native\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fi\\values-fi.xml",
             "map": [
                 {
                     "source": "C:\\Users\\51755101856\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\0085b31ea0e93ffdb6d1d12f4018aefd\\res\\values-fi\\values-fi.xml",
